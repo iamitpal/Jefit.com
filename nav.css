@@ -81,10 +81,10 @@ button:hover {
   width: 100%;
   height: auto;
   margin: auto;
-  border: 4px solid rgb(122, 85, 224);
+  /* border: 4px solid rgb(122, 85, 224); */
 }
 #master2 {
-  border: 4px solid yellow;
+  /* border: 4px solid yellow; */
   width: 45%;
   /* display: flex; */
   height: auto;
@@ -126,3 +126,69 @@ div > i {
   margin-left: 10%;
   font-size: 22px;
 }
+#slidepage {
+  background-color: white;
+  /* border: 4px solid royalblue; */
+  width: 100%;
+  height: 500px;
+  margin: auto;
+  /* text-align: center; */
+}
+#slidepage > h3 {
+  color: #2f373d;
+  margin-top: 60px;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+}
+#slidepage > h3 + h4 {
+  /* border: 1px solid red; */
+  color: #2f373d;
+  margin-top: 40px;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+}
+
+/* ----------------------------------------------------------- */
+.slider {
+  height: 250px;
+  margin: auto;
+  position: relative;
+  width: 90%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+.slide-track {
+  display: flex;
+  width: calc(250px * 20);
+  animation: scroll 40s linear infinite;
+}
+.slide-track:hover {
+  animation-play-state: paused;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 10));
+  }
+}
+.slide {
+  height: 200px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  perspective: 100px;
+}
+img {
+  /* width: 100%; */
+  transition: transform 0.5s;
+}
+img:hover {
+  transform: translateZ(20px);
+}
+/* ---------------------------------------------------------------------------- */
