@@ -37,6 +37,9 @@ nav ul li ul {
   padding: 10px;
   border-radius: 0px 0px 4px 4px;
 }
+#Login {
+  cursor: pointer;
+}
 
 nav ul li:hover ul {
   display: block;
@@ -419,4 +422,5 @@ div + h2 {
 }
 #footer p {
   text-align: center;
+  color: #74868c;
 }

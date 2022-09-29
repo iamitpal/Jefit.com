@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nav Bar</title>
     <link rel="stylesheet" href="nav.css" />
-    <link rel="stylesheet" href="/social-reason-8/index.js" />
+    <link rel="stylesheet" href="index.js" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
@@ -55,8 +55,8 @@
         <li><a href="#">Blog</a></li>
         <li><a href="#">Coach</a></li>
         <li><a href="#">Elite</a></li>
-        <li><a href="#">Login</a></li>
-        <div><button>Sign Up</button></div>
+        <li><a id="Login">Login</a></li>
+        <div><button id="Signup">Sign Up</button></div>
       </ul>
     </nav>
     <div id="master1">
@@ -493,3 +493,10 @@
     </div>
   </body>
 </html>
+<script>
+  let x = document.getElementById("Login").addEventListener("click", Login);
+  function Login() {
+    console.log("invoked");
+    window.location.href = "Login.html";
+  }
+</script>
