@@ -13,6 +13,7 @@ nav img {
   margin: auto;
   float: left;
   padding: 22px 80px;
+  cursor: pointer;
 }
 nav ul li {
   float: left;
