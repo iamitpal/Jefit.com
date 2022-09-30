@@ -16,12 +16,13 @@ nav img {
   cursor: pointer;
 }
 nav ul li {
+  /* border: 1px solid red; */
   float: left;
   list-style: none;
   position: relative;
 }
 nav ul li a {
-  display: block;
+  display: inline-block;
   /* border: 1px solid red; */
   font-family: sans-serif;
   color: white;
@@ -30,6 +31,22 @@ nav ul li a {
   margin-top: 5px;
   text-decoration: none;
 }
+#toggled_btn {
+  width: 35px;
+  position: absolute;
+  right: 80px;
+  top: 20px;
+  display: none;
+}
+#toggled_btn span {
+  display: inline-block;
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  float: left;
+  margin-bottom: 8px;
+}
+
 nav ul li ul {
   display: none;
   /* border: 1px solid red; */
@@ -354,10 +371,34 @@ div + h2 {
   color: white;
 }
 .dbutton {
-  margin: 10% auto;
+  margin: 10% 13%;
   background-color: transparent;
   border: 1px solid white;
   color: #fff;
+}
+.button-344 {
+  background-color: #257cff;
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 22px;
+  margin-left: 20%;
+}
+.button-344:hover {
+  background-color: #184fa3;
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 6px;
+  cursor: pointer;
 }
 #lpage {
   width: 100%;
@@ -480,5 +521,27 @@ div + h2 {
   }
   #container > h1 + div {
     flex-direction: column;
+  }
+}
+@media (max-width: 991px) {
+  #toggled_btn {
+    display: block;
+  }
+  nav ul li {
+    display: none;
+    width: 100%;
+    border-top: 1px solid #000;
+    padding-top: 20px;
+    margin-top: 30px;
+  }
+  #nav ul li {
+    padding: 15px 0px;
+    width: 100%;
+  }
+  #Signup {
+    display: none;
+  }
+  #nav.show {
+    display: block;
   }
 }
