@@ -14,11 +14,17 @@
   </head>
   <body>
     <nav>
+      <div id="toggled_btn" onclick="toggled()">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
       <img
         src="https://www.jefit.com/wp/wp-content/uploads/2017/07/cropped-logo_155_40_white-120x31.webp"
         alt="image"
       />
-      <ul>
+      <ul id="nav">
         <li>
           <a href="https://www.jefit.com"
             >Get Jefit App <i class="fa-solid fa-caret-down"></i
@@ -409,7 +415,7 @@
             <h3>Premium workout plans</h3>
             <h3>More...</h3>
             <div>
-              <button class="button-34" role="button">LEARN MORE</button>
+              <button class="button-344" role="button">LEARN MORE</button>
             </div>
             <h2>$12.99 billed / month</h2>
           </div>
@@ -433,7 +439,7 @@
             <h3>Premium workout plans</h3>
             <h3>More...</h3>
             <div>
-              <button class="button-34" role="button">LEARN MORE</button>
+              <button class="button-344" role="button">LEARN MORE</button>
             </div>
             <h2>Save 55%, $69.99 billed / year</h2>
           </div>
@@ -509,5 +515,9 @@
   function home() {
     console.log("invoked");
     window.location.href = "nav.html";
+  }
+  function toggled() {
+    let navbar = document.getElementById("nav");
+    navbar.classList.toggled("show");
   }
 </script>
