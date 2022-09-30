@@ -57,7 +57,7 @@
     </div>
   </body>
 </html>
-<!-- <script>
+<script>
   let submit = document.querySelector("form");
   submit.addEventListener("submit", subfun);
   let data = JSON.parse(localStorage.getItem("Signup_details"));
@@ -76,4 +76,10 @@
       document.querySelector("#pass").value = "";
     }
   }
-</script> -->
+
+  document.querySelector("nav img").addEventListener("click", home);
+  function home() {
+    console.log("invoked");
+    window.location.href = "nav.html";
+  }
+</script>
