@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Signup</title>
     <link rel="stylesheet" href="./Styles/Signup.css" />
+    <link rel="stylesheet" href="./Script/Signup.js" />
   </head>
   <body>
     <div id="gparent">
@@ -33,20 +34,36 @@
           <br />
           <br />
           <label>Username</label><br />
-          <input id="mail" type="email" placeholder="Enter a Username" /><br />
+          <input
+            id="Username"
+            type="text"
+            placeholder="Enter a Username"
+            required
+          /><br />
           <label>Email</label><br />
-          <input id="mail" type="email" placeholder="Enter your email" /><br />
+          <input
+            id="mail"
+            type="email"
+            placeholder="Enter your email"
+            required
+          /><br />
           <label>Password</label><br />
-          <input id="pass" type="password" placeholder="Password" /><br />
+          <input
+            id="pass"
+            type="password"
+            placeholder="Password"
+            required
+          /><br />
           <p>
             Minimum 8 characters1 number (0-9) <br />
             1 lowercase letter (a-z)1 uppercase letter (A-Z) <br />
             1 special character (from standard US keyboard)
           </p>
           <input
-            id="pass"
+            id="cpass"
             type="password"
             placeholder="Confirm Password"
+            required
           /><br />
           <input type="submit" value="Create Account" />
           <h4>
@@ -64,3 +81,21 @@
     </div>
   </body>
 </html>
+<!-- <script>
+  let submit = document.querySelector("form");
+  submit.addEventListener("submit", subfun);
+  function subfun(event) {
+    console.log("Invoked");
+    event.preventDefault();
+    let input = document.querySelectorAll("input");
+    let user = input[0].value;
+    let mail = input[1].value;
+    let pass = input[2].value;
+    let cpass = input[3].value;
+
+    let obj = { user, mail, pass, cpass };
+    localStorage.setItem("Signup_details", JSON.stringify(obj));
+    alert("Signup Successful");
+    window.location.href = "Login.html";
+  }
+</script> -->

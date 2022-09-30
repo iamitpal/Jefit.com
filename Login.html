@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LogIn</title>
     <link rel="stylesheet" href="./Styles/Login.css" />
+    <link rel="stylesheet" href="./Script/Login.js" />
   </head>
   <body>
     <div id="gparent">
@@ -18,10 +19,15 @@
       <div id="parent">
         <form action="">
           <h1>Login</h1>
-          <label>Username or Email</label><br />
-          <input id="mail" type="email" placeholder="Username or Email" /><br />
+          <label>Email</label><br />
+          <input id="mail" type="email" placeholder="Email" required /><br />
           <label>Password</label><br />
-          <input id="pass" type="password" placeholder="Enter Password" /><br />
+          <input
+            id="pass"
+            type="password"
+            placeholder="Enter Password"
+            required
+          /><br />
           <input type="submit" value="Login" />
           <h4>
             Forgot
@@ -51,3 +57,23 @@
     </div>
   </body>
 </html>
+<!-- <script>
+  let submit = document.querySelector("form");
+  submit.addEventListener("submit", subfun);
+  let data = JSON.parse(localStorage.getItem("Signup_details"));
+  function subfun(event) {
+    console.log(data);
+    event.preventDefault();
+    let mail = document.querySelector("#mail").value;
+    let pass = document.querySelector("#pass").value;
+
+    if (mail === data.mail && pass === data.pass) {
+      alert("Hurry! Login Successful");
+      window.location.href = "nav.html";
+    } else {
+      alert("Incorrect Email & Password");
+      document.querySelector("#mail").value = "";
+      document.querySelector("#pass").value = "";
+    }
+  }
+</script> -->
