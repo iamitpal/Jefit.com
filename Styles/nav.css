@@ -134,6 +134,15 @@ button:hover {
   line-height: 72px;
   color: white;
 }
+#gplay,
+#appstore {
+  cursor: pointer;
+}
+.fa-instagram,
+.fa-facebook,
+.fa-twitter {
+  cursor: pointer;
+}
 h1 + h3 {
   font-family: sans-serif;
   font-size: 30px;

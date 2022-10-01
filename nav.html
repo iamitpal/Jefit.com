@@ -72,15 +72,18 @@
         <div class="divv">
           <div id="master3">
             <img
+              id="gplay"
               src="https://www.jefit.com/wp/wp-content/uploads/2021/11/googleplay.png.webp"
               alt=""
             />
             <img
+              id="appstore"
               src="https://www.jefit.com/wp/wp-content/uploads/2021/11/appstore.png.webp"
               alt=""
+              href="https://play.google.com/store/apps/details?id=je.fit&referrer=utm_source%3Demail"
             />
             <div>
-              <i href="" class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-instagram"></i>
               <i class="fa-brands fa-facebook"></i>
               <i class="fa-brands fa-twitter"></i>
             </div>
@@ -249,7 +252,7 @@
           </div>
         </div>
         <div>
-          <button class="button-34" role="button">JOIN NOW</button>
+          <button class="button-34 joinnow" role="button">JOIN NOW</button>
         </div>
       </div>
     </div>
@@ -288,7 +291,7 @@
               <h3>Support custom exercises</h3>
               <h3>Flexible workout planning tool</h3>
               <div>
-                <button class="button-34" role="button">JOIN NOW</button>
+                <button class="button-34 join" role="button">JOIN NOW</button>
               </div>
             </div>
           </div>
@@ -324,7 +327,7 @@
               <h3>Available on mobile and watch</h3>
               <h3>Audio and video instructions</h3>
               <div>
-                <button class="button-34" role="button">JOIN NOW</button>
+                <button class="button-34 join1" role="button">JOIN NOW</button>
               </div>
             </div>
           </div>
@@ -372,7 +375,7 @@
               <h3>Understand muscle recovery rate</h3>
               <h3>Set 1RM goals and refresh records</h3>
               <div>
-                <button class="button-34" role="button">JOIN NOW</button>
+                <button class="button-34 join2" role="button">JOIN NOW</button>
               </div>
             </div>
           </div>
@@ -463,8 +466,8 @@
           <div>
             <a href="">Elite Membership</a><br />
             <a href="">Coach</a><br />
-            <a href="">Signup</a><br />
-            <a href="">Login</a>
+            <a href="./Signup.html">Signup</a><br />
+            <a href="./Login.html">Login</a>
           </div>
         </div>
         <div>
@@ -487,10 +490,10 @@
         <div>
           <h4>Follow US</h4>
           <div>
-            <a href="">Blog</a><br />
-            <a href="">Facebook</a><br />
-            <a href="">Twitter</a><br />
-            <a href="">instagram</a>
+            <a href="./Blog.html">Blog</a><br />
+            <a href="https://www.facebook.com/jefitapp/">Facebook</a><br />
+            <a href="https://twitter.com/jefitinc"">Twitter</a><br />
+            <a href="https://www.instagram.com/jefitapp/">instagram</a>
           </div>
         </div>
       </div>
@@ -503,6 +506,23 @@
   document.querySelector("#Login").addEventListener("click", Login);
   document.querySelector("#Signup").addEventListener("click", Signup);
   document.querySelector("nav img").addEventListener("click", home);
+  document.querySelector("#gplay").addEventListener("click", gplay);
+  document.querySelector("#appstore").addEventListener("click", appstore);
+  document.querySelector(".fa-instagram").addEventListener("click", insta);
+  document.querySelector(".fa-facebook").addEventListener("click", facebook);
+  document.querySelector(".fa-twitter").addEventListener("click", twitter);
+  document.querySelector(".button-34").addEventListener("click", join);
+  document.querySelector(".join").addEventListener("click", join);
+  document.querySelector(".join1").addEventListener("click", join);
+  document.querySelector(".join2").addEventListener("click", join);
+  document.querySelector(".dbutton").addEventListener("click", join);
+  document.querySelector(".lbutton").addEventListener("click", join);
+
+  // -------------------------------
+  function join() {
+    console.log("invoked");
+    window.location.href = "Signup.html";
+  }
 
   function Login() {
     console.log("invoked");
@@ -519,5 +539,27 @@
   function toggled() {
     let navbar = document.getElementById("nav");
     navbar.classList.toggled("show");
+  }
+  function gplay() {
+    console.log("invoked");
+    window.location.href =
+      "https://play.google.com/store/apps/details?id=je.fit&referrer=utm_source%3Demail";
+  }
+  function appstore() {
+    console.log("invoked");
+    window.location.href =
+      "https://itunes.apple.com/app/apple-store/id449810000?pt=516380&ct=Email&mt=8";
+  }
+  function insta() {
+    console.log("invoked");
+    window.location.href = "https://www.instagram.com/jefitapp/";
+  }
+  function facebook() {
+    console.log("invoked");
+    window.location.href = "https://www.facebook.com/jefitapp/";
+  }
+  function twitter() {
+    console.log("invoked");
+    window.location.href = "https://twitter.com/jefitinc";
   }
 </script>

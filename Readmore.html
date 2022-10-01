@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./Styles/Blog.css" />
+    <link rel="stylesheet" href="./Script/Readmore.js">
     <title>Blog</title>
   </head>
   <body>
@@ -169,8 +170,8 @@
           <div>
             <a href="">Elite Membership</a><br />
             <a href="">Coach</a><br />
-            <a href="">Signup</a><br />
-            <a href="">Login</a>
+            <a href="./Signup.html">Signup</a><br />
+            <a href="./Login.html">Login</a>
           </div>
         </div>
         <div>
@@ -193,10 +194,10 @@
         <div>
           <h4>Follow US</h4>
           <div>
-            <a href="">Blog</a><br />
-            <a href="">Facebook</a><br />
-            <a href="">Twitter</a><br />
-            <a href="">instagram</a>
+            <a href="./Blog.html">Blog</a><br />
+            <a href="https://www.facebook.com/jefitapp/">Facebook</a><br />
+            <a href="https://twitter.com/jefitinc"">Twitter</a><br />
+            <a href="https://www.instagram.com/jefitapp/">instagram</a>
           </div>
         </div>
       </div>
@@ -205,3 +206,21 @@
     </div>
   </body>
 </html>
+<script>
+  document.querySelector("#Login").addEventListener("click", Login);
+  document.querySelector("#Signup").addEventListener("click", Signup);
+  document.querySelector("nav img").addEventListener("click", home);
+
+  function Login() {
+    console.log("invoked");
+    window.location.href = "Login.html";
+  }
+  function Signup() {
+    console.log("invoked");
+    window.location.href = "Signup.html";
+  }
+  function home() {
+    console.log("invoked");
+    window.location.href = "nav.html";
+  }
+</script>

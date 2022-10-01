@@ -12,6 +12,7 @@
     <div id="gparent">
       <div>
         <img
+          id="home"
           src="https://www.jefit.com/images/jefit_logo_website_signuplogin.svg"
           alt=""
         />
@@ -21,13 +22,19 @@
           <h1>CREATE ACCOUNT</h1>
           <p>Continue with</p>
           <div>
-            <a href="">
+            <a
+              href="https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?response_type=code&access_type=online&client_id=447303321639-t75iduaas17fb5bsah6tls8oophbd3g9.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fwww.jefit.com%2Flogin%2Fgplus-login.php&state&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fplus.login%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&approval_prompt=auto&flowName=GeneralOAuthFlow"
+            >
               <img src="https://www.jefit.com/images/rg_google.svg" alt="" />
             </a>
-            <a href="">
+            <a
+              href="https://www.facebook.com/login.php?skip_api_login=1&api_key=165523163464640&kid_directed_site=0&app_id=165523163464640&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv2.5%2Fdialog%2Foauth%3Fclient_id%3D165523163464640%26state%3Daf5879a04c38623900248f9287559984%26response_type%3Dcode%26sdk%3Dphp-sdk-5.0.0%26redirect_uri%3Dhttps%253A%252F%252Fwww.jefit.com%252Flogin%252Ffacebook-login.php%26scope%3Demail%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D6f8f789c-a486-4e73-aaab-d41d1a7777b1%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fwww.jefit.com%2Flogin%2Ffacebook-login.php%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3Daf5879a04c38623900248f9287559984%23_%3D_&display=page&locale=en_GB&pl_dbl=0"
+            >
               <img src="https://www.jefit.com/images/rg_fb.svg" alt="" />
             </a>
-            <a href="">
+            <a
+              href="https://appleid.apple.com/auth/authorize?client_id=com.web.JEFIT&redirect_uri=https%3A%2F%2Fwww.jefit.com%2Fapi%2Fapple-signin-callback%3Fplatform%3Dweb&response_type=code%20id_token&state=8uhtj5guV9ZSvRRUiXAAKb6KeCMwol1z34UxBVv5&scope=name%20email&response_mode=form_post&frame_id=37d9c817-1363-4cec-a18f-59d7a7b253d1&m=22&v=1.5.4"
+            >
               <img src="https://www.jefit.com/images/rg_apple.svg" alt="" />
             </a>
           </div>
@@ -68,7 +75,7 @@
           <input type="submit" value="Create Account" />
           <h4>
             Already a member?
-            <a href="">Signin</a>
+            <a href="./Login.html">Signin</a>
           </h4>
           <h4>
             By signing up, you agree to the JEFIT
@@ -81,7 +88,7 @@
     </div>
   </body>
 </html>
-<!-- <script>
+<script>
   let submit = document.querySelector("form");
   submit.addEventListener("submit", subfun);
   function subfun(event) {
@@ -98,4 +105,9 @@
     alert("Signup Successful");
     window.location.href = "Login.html";
   }
-</script> -->
+  document.querySelector("#home").addEventListener("click", home);
+  function home() {
+    console.log("invoked");
+    window.location.href = "nav.html";
+  }
+</script>
