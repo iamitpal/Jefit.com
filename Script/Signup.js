@@ -16,5 +16,5 @@ function subfun(event) {
 document.querySelector("#home").addEventListener("click", home);
 function home() {
   console.log("invoked");
-  window.location.href = "nav.html";
+  window.location.href = "index.html";
 }
