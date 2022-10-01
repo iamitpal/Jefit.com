@@ -1,6 +1,6 @@
 let submit = document.querySelector("form");
 submit.addEventListener("submit", subfun);
-let data = JSON.parse(localStorage.getItem("Signup_details"));
+let data = JSON.parse(localStorage.getItem("Signup_details")) || [];
 function subfun(event) {
   console.log(data);
   event.preventDefault();
