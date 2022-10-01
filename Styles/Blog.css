@@ -113,6 +113,13 @@ p {
 hr {
   margin-top: 8%;
   margin-bottom: 2%;
+  color: #74868c;
+}
+h3 {
+  font-size: 24px;
+  line-height: 29px;
+  color: #2f373d;
+  text-align: left;
 }
 /* ------------------------------------------- */
 #footer {
