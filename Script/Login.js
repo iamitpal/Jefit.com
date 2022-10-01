@@ -16,3 +16,8 @@ function subfun(event) {
     document.querySelector("#pass").value = "";
   }
 }
+document.querySelector("#home").addEventListener("click", home);
+function home() {
+  console.log("invoked");
+  window.location.href = "nav.html";
+}

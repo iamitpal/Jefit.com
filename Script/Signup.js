@@ -13,3 +13,8 @@ function subfun(event) {
   alert("Signup Successful");
   window.location.href = "Login.html";
 }
+document.querySelector("#home").addEventListener("click", home);
+function home() {
+  console.log("invoked");
+  window.location.href = "nav.html";
+}

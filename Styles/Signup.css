@@ -121,3 +121,6 @@ p {
   line-height: 30px;
   color: #fd3133;
 }
+#home {
+  cursor: pointer;
+}
