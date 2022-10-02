@@ -60,7 +60,7 @@ input[type="submit"] {
 h1 {
   text-align: center;
   color: #303030;
-  font-size: 40px;
+  font-size: 32px;
   font-family: sans-serif;
   line-height: 18px;
 }
@@ -71,14 +71,14 @@ h4 {
 }
 input[type="email"] {
   border: none;
-  height: 50px;
+  height: auto;
 }
 h4 a {
   color: #0093e9;
 }
 input[type="password"] {
   border: none;
-  height: 50px;
+  height: auto;
 }
 #gparent > div > img {
   width: 150px;
@@ -123,4 +123,58 @@ p {
 }
 #home {
   cursor: pointer;
+}
+@media all and (min-width: 451px) and (max-width: 912px) {
+  #parent {
+    flex-wrap: wrap;
+  }
+  h1 {
+    font-size: 25px;
+    line-height: 25px;
+  }
+  input[type="submit"] {
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 15px;
+  }
+  #parent {
+    /* border: 4px solid rgb(0, 0, 0); */
+    height: auto;
+    margin: auto;
+    display: flex;
+  }
+  #pass ~ p {
+    display: none;
+  }
+}
+@media all and (min-width: 100px) and (max-width: 450px) {
+  #parent {
+    flex-wrap: wrap;
+  }
+  h1 {
+    font-size: 15px;
+    line-height: 25px;
+  }
+  input[type="submit"] {
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 10px;
+  }
+  #parent {
+    /* border: 4px solid rgb(0, 0, 0); */
+    height: auto;
+    margin: auto;
+    display: flex;
+    background-color: #ebf7ff;
+    margin-top: 10%;
+    margin-bottom: 2%;
+    box-shadow: rgba(255, 255, 255, 0.322) 0px 3px 8px;
+  }
+  #pass ~ p {
+    display: none;
+  }
 }
