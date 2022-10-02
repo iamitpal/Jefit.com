@@ -106,3 +106,37 @@ a > img {
   margin: 2% 0%;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
+@media all and (min-width: 451px) and (max-width: 750px) {
+  #parent {
+    flex-wrap: wrap;
+  }
+  h1 {
+    text-align: center;
+    font-size: 32px;
+    line-height: 12px;
+  }
+  #gparent > div > img {
+    width: 150px;
+    /* text-align: center; */
+    margin-left: 35%;
+    margin-top: 3%;
+    margin-bottom: 2%;
+  }
+}
+@media all and (min-width: 100px) and (max-width: 450px) {
+  #parent {
+    flex-wrap: wrap;
+  }
+  h1 {
+    text-align: center;
+    font-size: 25px;
+    line-height: 10px;
+  }
+  #gparent > div > img {
+    width: 150px;
+    /* text-align: center; */
+    margin-left: 30%;
+    margin-top: 3%;
+    margin-bottom: 2%;
+  }
+}
