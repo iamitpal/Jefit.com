@@ -9,7 +9,7 @@ function subfun(event) {
 
   if (mail === data.mail && pass === data.pass) {
     alert("Hurry! Login Successful");
-    window.location.href = "nav.html";
+    window.location.href = "index.html";
   } else {
     alert("Incorrect Email & Password");
     document.querySelector("#mail").value = "";
@@ -19,5 +19,5 @@ function subfun(event) {
 document.querySelector("#home").addEventListener("click", home);
 function home() {
   console.log("invoked");
-  window.location.href = "nav.html";
+  window.location.href = "index.html";
 }
