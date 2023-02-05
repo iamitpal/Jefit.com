@@ -1,4 +1,4 @@
-<h1 align="center">Radar.com Clone</h1>
+<h1 align="center">Jefit.com Clone</h1>
 <br />
 
 <h2 align="center">🖥️ Tech Stack</h2>
